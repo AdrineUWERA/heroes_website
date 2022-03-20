@@ -16,7 +16,7 @@
     <div class="container">
 
         <div class="heading">
-            <h4 class="display-4 text-center ">View Heroes<img src="images/logo.jpeg" alt="logo"></h4>
+            <h4 class="display-4 text-center ">View Heroes<img src="images/logo.png" alt="logo"></h4>
         </div>
 
         <div class="box">
