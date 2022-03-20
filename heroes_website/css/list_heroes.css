@@ -1,0 +1,83 @@
+tr:nth-of-type(even) {
+  background-color: #dc3545;
+}
+tr:nth-of-type(odd) {
+  background-color: white;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+h4 {
+  font-family: "Solway";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 24px;
+
+  color: #ffffff;
+  background-color: #dc3545;
+}
+.heading {
+  margin-top: 3%;
+}
+img {
+  width: 200px;
+  height: 70px;
+  float: left;
+  margin-right: 10px;
+}
+
+.box {
+  padding-left: 4%;
+  padding-right: 4%;
+}
+
+body {
+  background-image: url(../images/add_hero_bg.webp);
+  background-repeat: no-repeat;
+  background-origin: content-box;
+  background-position: center top;
+}
+
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 2%;
+}
+
+.footer-content {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #000;
+}
+
+.footer-icons {
+  display: inline-block;
+}
+
+footer .fa-brands {
+  font-size: 50px;
+  color: #fff;
+  margin: 20px;
+  cursor: pointer;
+}
+
+footer .fa-brands:hover {
+  color: #bf1e1e;
+  transition: all 0.3s ease;
+}
+
+footer p {
+  color: #fff;
+  text-align: center;
+}
