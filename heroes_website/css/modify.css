@@ -1,0 +1,145 @@
+/* tr:nth-of-type(even) {
+    background-color: #BF1E1E;
+     
+}
+
+tr:nth-of-type(odd) {
+    background-color: #fff;
+  
+}
+
+tr:nth-of-type(even) , .view_more_link{
+    color: #fff;
+}
+
+tr:nth-of-type(odd) , .view_more_link{
+    color: black;
+}
+ */
+
+
+tr:nth-of-type(2n+0) {
+    background:#BF1E1E;
+    color:white;
+  }
+
+tr:nth-of-type(2n+0) > a{
+    color:white;
+}
+
+.spacer{
+    padding-right: 100px;
+}
+
+body{
+    background-image: url(../images/modify_bg.jpg);
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    background-size:cover; 
+    background-position: center top;
+}
+
+.container {
+    /* min-height: 100vh; */
+    width: 100%;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    flex-direction: column;
+}
+
+.outer-heading{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #BF1E1E;
+    margin-bottom: 4%;
+    margin-top: 4%;
+    width: 90%;
+    height: 70px;
+    /* align-self: center; */
+}
+
+.heading img{
+    width: 15%;
+    /* height: 90px; */
+}
+
+.signup-btn-container{
+    width:20%;
+}
+
+.btn-signup{
+    background-color: #fff;
+    color:#BF1E1E;
+}
+
+.button-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.update-btn:nth-of-type(even){
+    background-color: #BF1E1E;
+    color: #fff;
+    border: none;
+}
+ 
+.update-btn:nth-of-type(odd){
+    background-color: #fff;
+    color: #BF1E1E;
+    border: none;
+}
+
+
+footer {
+    width:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* margin-left:5%; */
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.footer-content{
+    width: 90%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #000;
+}
+
+.footer-icons{
+    display: inline-block;
+}
+
+footer .fa-brands{
+    font-size: 50px;
+    color: #fff;
+    margin: 20px;
+    cursor: pointer;
+}
+
+footer .fa-brands:hover{
+    color: #BF1E1E;
+    transition: all 0.3s ease;
+}
+
+footer p{
+    color:#fff;
+    text-align: center;
+}
+
