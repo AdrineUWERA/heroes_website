@@ -10,6 +10,48 @@ body{
     background-repeat: no-repeat;
     background-origin: content-box;
     background-position: center top;
+    min-height: 100vh;
+}
+
+
+.navbar-container{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar{
+    margin-top: 4%;
+    margin-bottom: 4%;
+    background:rgba(191,30,30,0.7);
+    color:white;
+    width: 90%;
+}
+
+
+.navbar-toggler{
+    width: 20%;
+}
+
+.logo-container{
+    width: 50%;
+}
+
+.navbar img{
+    background:none; 
+    height: 80px;
+}
+
+.bar{
+    width:25px;
+    height: 3px;
+    margin: 5px auto;
+    margin-right: 30px;
+    transition: all 0.3s ease-in-out;
+    background: #fff;
+    display: block;
+    cursor: pointer;
 }
 
 .container {
@@ -22,14 +64,13 @@ body{
 }
 
 .container form{
-    margin-top:5%;
-    margin-bottom:5%;
+    margin-top:0%;
+    margin-bottom:4%;
     width: 60%;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,.2), 0 4px 8px 0 rgba(0,0,0, .19);
     background-color:rgba(191,30,30,0.7);
-    /* margin-left:20%; */
 }
 
 .button-container{
@@ -47,8 +88,6 @@ body{
     border-radius: 5px;
     /* margin-left: 30%; */
 }
-
-
 
 .container form button:hover{
     background-color: #000;

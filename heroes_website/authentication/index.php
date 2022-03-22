@@ -4,7 +4,6 @@ if (!isset($_SESSION['Logged_user'])) {
 	header('Location:login.php');
 }	
 ?>
-welcome
 
 <form method="post">
 	<?php require_once('operations.php') ?>

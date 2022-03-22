@@ -1,30 +1,10 @@
-* {
-margin: 0;
-padding: 0;
-box-sizing: border-box;
-outline: none;
-}
-
-tr:nth-of-type(even) {
-    background:#BF1E1E;
-    color:white;
-  }
-
-tr:nth-of-type(odd){
-    color:white;
-}
-
 body{
-    background-image: url(../images/modify_bg.jpg);
+    background-image: url(../images/R1.png);
     background-repeat: no-repeat;
     background-origin: content-box;
     background-size: cover; 
     background-position: center top;
     min-height: 100vh;
-}
-
-.container {
-    width: 100%;
 }
 
 .navbar-container{
@@ -35,17 +15,8 @@ body{
 }
 
 .navbar{
-    margin-top: 4%;
-    margin-bottom: 4%;
-    /* background:#BF1E1E; */
     background:rgba(191,30,30,0.7);
-    color:white;
     width: 90%;
-}
-
-
-.navbar-toggler{
-    width: 20%;
 }
 
 .logo-container{
@@ -57,30 +28,50 @@ body{
     height: 80px;
 }
 
-.bar{
-    width:25px;
-    height: 3px;
-    margin: 5px auto;
-    margin-right: 30px;
-    transition: all 0.3s ease-in-out;
-    background: #fff;
-    display: block;
-    cursor: pointer;
-}
-
-.button-container{
+.nav-link{
+    width: 50%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
-    flex-direction: column;
 }
 
-.update-btn{
-    background-color: #fff;
+.nav-link .btn{
+    background-color:#fff;
+    text-decoration: none;
+    color:#BF1E1E;
+}
+
+.nav-link .btn:hover{
+    color:#fff;
+    background-color:#000;
+    text-decoration: none;
+}
+
+h2{
     color: #BF1E1E;
-    border: none;
 }
 
+.card-bottom button {
+    background-color: #BF1E1E;
+    color:#fff; 
+    border-radius: 7px;
+    width: 100%;
+}
+
+.card-bottom a{
+    background-color: #BF1E1E;
+    color:#fff; 
+    border-radius: 7px;
+    width: 100%;
+}
+.card-bottom button:hover{
+    background-color: #bd3232;
+    color:#fff;
+}
+.card-bottom a:hover{
+    background-color: #bd3232;
+    color:#fff; 
+}
 
 footer {
     width:100%;
@@ -89,6 +80,7 @@ footer {
     align-items: center;
     flex-direction: column;
     margin-top: 2%;
+    margin-bottom: 2%;
 }
 
 .footer-content{
@@ -120,4 +112,3 @@ footer p{
     color:#fff;
     text-align: center;
 }
-
