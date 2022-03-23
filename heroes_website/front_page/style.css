@@ -133,3 +133,9 @@ header .logo {
     letter-spacing: 2px;
   }
 }
+
+@media (max-width: 767px) {
+  .logo {
+    display: none;
+  }
+}
