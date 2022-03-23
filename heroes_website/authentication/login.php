@@ -2,7 +2,12 @@
 <?php 
 session_start();
 if (isset($_SESSION['Logged_user'])) {
-	header('Location:./index.php');
+
+	if($_SESSION['Logged_user'][5] == 'admin'){
+        header('Location:../list_hereos.php');
+    }else{
+		header('Location:../index.php');
+	}
 }
 ?>
 
