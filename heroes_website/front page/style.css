@@ -112,3 +112,9 @@ header .logo {
     font-size: 2em;
   }
 }
+
+@media (max-width: 767px) {
+  .logo {
+    display: none;
+  }
+}
