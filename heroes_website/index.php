@@ -20,7 +20,7 @@ session_start();
     <div class="outer-heading">
         <div class="heading">
             <div class="logo-container">
-            <img src="images/logo.png" alt="logo">
+            <a href="#"><img src="images/logo.png" alt="logo"></a>
             </div>
             <span class="display-6 text-center text-white fw-bold">View Heroes</span>
             <div class="signup-btn-container">
