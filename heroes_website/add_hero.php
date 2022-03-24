@@ -1,11 +1,11 @@
 <?php 
 session_start();
 if (!isset($_SESSION['Logged_user'])) {
-	header('Location:index.php');
+	header('Location:read.php');
 }else{
 
     if($_SESSION['Logged_user'][5] != 'admin'){
-        header('Location:index.php');
+        header('Location:read.php');
     }
 }	
 
@@ -36,6 +36,7 @@ if (!isset($_SESSION['Logged_user'])) {
                 </div>
                 <div class="collapse navbar-collapse  pt-0 pb-0 justify-content-end pr-4 pl-4" id="navbarNavAltMarkup">
                     <div class="navbar-nav text-center p-4 pt-0 pb-0">
+                        <a class="nav-item nav-link active text-white m-3 mt-0 mb-0" href="index.html">Home</a>
                         <a class="nav-item nav-link active text-white m-3 mt-0 mb-0" href="list_hereos.php">View</a>
                         <a class="nav-item nav-link text-white m-4 mt-0 mb-0" href="add_hero.php">Add</a>
                         <a class="nav-item nav-link text-white  m-4 mt-0 mb-0" href="modify.php">Modify</a> 

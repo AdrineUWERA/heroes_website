@@ -6,7 +6,7 @@ if (isset($_SESSION['Logged_user'])) {
 	if($_SESSION['Logged_user'][5] == 'admin'){
         header('Location:../list_hereos.php');
     }else{
-		header('Location:../index.php');
+		header('Location:../read.php');
 	}
 }
 ?>
@@ -28,7 +28,8 @@ if (isset($_SESSION['Logged_user'])) {
 					<a class="navbar-brand" href="#"><img src="../images/logo.png" class="img-thumbnail bg-none border-0 bg-0" alt="logo"/></a>
 				</div>
 				<div class="nav-link">
-					<a href="../index.php"><button class="btn">View List</button></a>
+					<a class="nav-item nav-link active text-white m-3 mt-0 mb-0" href="../index.html">Home</a>
+					<a href="../read.php"><button class="btn">View List</button></a>
 				</div>	
 			</nav>
 		</div>

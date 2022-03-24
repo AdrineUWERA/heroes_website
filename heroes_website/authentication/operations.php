@@ -79,7 +79,7 @@
 											if ($mysqli_fect_user['role']== "admin"){
 												header("Location:../list_hereos.php");
 											} else {
-												header("Location:../index.php");
+												header("Location:../read.php");
 											}
 										}else{
 											$errror="User password doesn't match";

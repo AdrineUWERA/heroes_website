@@ -1,8 +1,7 @@
 tr:nth-of-type(even) {
-  background-color: #BF1E1E;
-  color: #fff;
+    background-color: #BF1E1E;
+    color: #fff;
 }
-
 tr:nth-of-type(odd) {
   background-color: white;
   color: #BF1E1E;
@@ -15,47 +14,46 @@ tr:nth-of-type(odd) {
   outline: none;
 }
 
-
-.navbar-container{
-  width:100%;
+.outer-heading{
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.navbar{
-  margin-top: 4%;
-  margin-bottom: 4%;
+.heading{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
   background:rgba(191,30,30,0.7);
-  color:white;
+  margin-bottom: 4%;
+  margin-top: 4%;
   width: 90%;
-}
-
-
-.navbar-toggler{
-  width: 20%;
-}
-
-.logo-container{
-  width: 50%;
-}
-
-.navbar img{
-  background:none; 
   height: 80px;
 }
 
-.bar{
-  width:25px;
-  height: 3px;
-  margin: 5px auto;
-  margin-right: 30px;
-  transition: all 0.3s ease-in-out;
-  background: #fff;
-  display: block;
-  cursor: pointer;
+.logo-container{
+  width: 20%;
 }
 
+.heading img{
+  width: 100%;
+}
+
+.nav-link{
+  width:80%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.btn-signup{
+  background-color: #fff;
+  color:#BF1E1E;
+}
+
+  
 body {
   background-image: url(../images/read_bg.jpg);
   background-repeat: no-repeat;
@@ -108,3 +106,4 @@ footer p {
   color: #fff;
   text-align: center;
 }
+  

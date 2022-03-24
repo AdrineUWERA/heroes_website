@@ -1,8 +1,25 @@
 <?php
 session_start();
+
+if (isset($_SESSION['Logged_user'])) {
+    if($_SESSION['Logged_user'][5] == 'admin'){
+        header('Location:list_hereos.php');
+    }    
+}
+
+// if (!isset($_SESSION['Logged_user'])) {
+// 	header('Location:read.php');
+// }else{
+
+//     if($_SESSION['Logged_user'][5] == 'admin'){
+//         header('Location:list_hereos.php');
+//     }
+// }
 ?>
+
 <?php include "php/list.php" ?>
 <?php require_once('./authentication/operations.php') ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -12,7 +29,7 @@ session_start();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/3c5d2d689a.js" crossorigin="anonymous"></script>
-    <link href="css/index.css" rel="stylesheet" type="text/css">
+    <link href="css/read.css" rel="stylesheet" type="text/css">
     <title>Heroes website</title>
 </head>
 
@@ -20,10 +37,12 @@ session_start();
     <div class="outer-heading">
         <div class="heading">
             <div class="logo-container">
-            <a href="#"><img src="images/logo.png" alt="logo"></a>
+                <a href="#"><img src="images/logo.png" alt="logo"></a>
             </div>
-            <span class="display-6 text-center text-white fw-bold">View Heroes</span>
-            <div class="signup-btn-container">
+            <div class="nav-link">
+                <div>
+                    <a class="nav-link active text-white m-3 mt-0 mb-0" href="index.html">Home</a>
+                </div>
                 <?php if(isset($_SESSION['Logged_user'])):
                 ?>
                 <form method="post"> 
@@ -38,6 +57,7 @@ session_start();
 
     <div class="container">
         <div class="box">
+        <p class="display-6 text-center text-white fw-bold p-3" style="background-color: #000;">List of X-Men</p>
             <?php if (mysqli_num_rows($result)) { ?>
                 <div class="table-responsive">
                 <table class="table table-striped">
@@ -88,9 +108,6 @@ session_start();
                 </table>
                 </div>
             <?php } ?>
-            <!-- <div class="link-right">
-                <a href="index.php" class='link-primary'>Create</a>
-            </div> -->
         </div>
     </div>
 

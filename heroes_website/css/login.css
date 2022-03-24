@@ -42,8 +42,8 @@ body{
 }
 
 .nav-link .btn:hover{
-    color:#fff;
-    background-color:#000;
+    color:#000;
+    background-color:#fff;
     text-decoration: none;
 }
 
