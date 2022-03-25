@@ -59,6 +59,7 @@ if (!isset($_SESSION['Logged_user'])) {
 
         <div class="container">
             <div class="box">
+                <p class="display-6 text-center text-white fw-bold p-3" style="background-color: #000;">List of X-Men</p>
                 <?php if (mysqli_num_rows($result)) { ?>
                     <div class="table-responsive">
                     <table class="table table-striped">
@@ -87,7 +88,7 @@ if (!isset($_SESSION['Logged_user'])) {
                                     <div class="modal fade" id="view_more_<?php echo $row['id']?>" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
                                         <div class="modal-dialog">
                                             <div class="modal-content">
-                                                <div class="modal-header">
+                                                <div class="modal-header"> 
                                                     <h5 class="modal-title" id="modal-title"><?php echo $row['name']?></h5>
                                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                                 </div>

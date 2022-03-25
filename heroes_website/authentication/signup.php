@@ -15,6 +15,7 @@
 					<a class="navbar-brand" href="#"><img src="../images/logo.png" class="img-thumbnail bg-none border-0 bg-0" alt="logo"/></a>
 				</div>
 				<div class="nav-link">
+					<a class="nav-item nav-link active text-white m-3 mt-0 mb-0" href="../index.html">Home</a>
 					<a href="../read.php"><button class="btn">View List</button></a>
 				</div>	
 			</nav>
